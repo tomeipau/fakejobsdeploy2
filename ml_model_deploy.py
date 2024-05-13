@@ -26,4 +26,25 @@ rf_classifier = Pipeline([
     ('clf', RandomForestClassifier()),
 ])
 
-# Fit TF-IDF v
+# Fit TF-IDF vectorizer and classifier with training data
+rf_classifier.fit(train_data, train_labels)
+
+def predict_fake_job_posting(job_description):
+    # Make predictions using the loaded model
+    prediction = rf_classifier.predict([job_description])
+    return prediction[0]
+
+def main():
+    st.title('Fake Job Posting Detector')
+
+    job_description = st.text_area('Enter job description here:')
+    if st.button('Predict'):
+        prediction = predict_fake_job_posting(job_description)
+        if prediction == 1:
+            st.write('Prediction: Fake')
+        else:
+            st.write('Prediction: Real')
+
+if __name__ == '__main__':
+    main()
+
