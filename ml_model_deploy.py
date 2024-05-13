@@ -43,15 +43,15 @@ def predict_fake_job_posting(job_description):
     return prediction[0]
 
 def main():
-
     job_description = st.text_area('Enter job description here:')
     if st.button('Predict'):
         prediction = predict_fake_job_posting(job_description)
         if prediction == 1:
-            st.write('Prediction: Fake')
+            st.write('Prediction: ', unsafe_allow_html=True)
+            st.write('<span style="color:red;">Fake</span>', unsafe_allow_html=True)
         else:
-            st.write('Prediction: Real')
+            st.write('Prediction: ', unsafe_allow_html=True)
+            st.write('<span style="color:green;">Real</span>', unsafe_allow_html=True)
 
 if __name__ == '__main__':
     main()
-
