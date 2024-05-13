@@ -16,7 +16,7 @@ from sklearn.pipeline import Pipeline
 # Add a background image using custom CSS
 background_image_path = "header.jpg"
 st.image(background_image_path, use_column_width=True)  # Adjust 'use_column_width' based on your preference
-st.markdown("# WQD7006 MACHINE LEARNING FOR DATA SCIENCE - Group 15")
+st.markdown("# WQD7006 Machine Learning For Data Science - Group 15")
 
 # Load data from the CSV file
 data = pd.read_csv("fake_job_postings.csv")
@@ -42,7 +42,7 @@ def predict_fake_job_posting(job_description):
 def main():
     st.title('Fraudelent Job Posting Predictor')
     st.write("Members: Law Jia Jin, Lim Sze Sing, Gan Jing Wen, Nur Shafiqah, Nur Nazifa")
-    st.write("Our data product is a predictive analytics tool designed to assist the identification of fake job postings. Leveraging a Random Forest model, the system analyzes the job description posted from job listings for the informed decisions.")
+    st.write("Our data product is a predictive analytics tool crafted to aid in identifying fake job postings. Using a Random Forest model, the system analyzes job descriptions from job listings to support informed decision-making.")
 
     job_description = st.text_area('Enter job description here:')
     if st.button('Predict'):
