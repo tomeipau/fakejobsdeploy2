@@ -54,4 +54,5 @@ def main():
 if __name__ == '__main__':
     main()
 
-st.write("WQD7006 Machine Learning For Data Science - Group 15 : Law Jia Jin, Lim Sze Sing, Gan Jing Wen, Nur Shafiqah, Nur Nazifa")
+st.write("<b>WQD7006 Machine Learning For Data Science - Group 15:</b><br>Law Jia Jin, Lim Sze Sing, Gan Jing Wen, Nur Shafiqah, Nur Nazifa</br>", unsafe_allow_html=True)
+
