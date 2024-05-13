@@ -54,5 +54,4 @@ def main():
 if __name__ == '__main__':
     main()
 
-st.markdown("# WQD7006 Machine Learning For Data Science - Group 15")
-st.write("Law Jia Jin, Lim Sze Sing, Gan Jing Wen, Nur Shafiqah, Nur Nazifa")
+st.write("# WQD7006 Machine Learning For Data Science - Group 15 : Law Jia Jin, Lim Sze Sing, Gan Jing Wen, Nur Shafiqah, Nur Nazifa")
