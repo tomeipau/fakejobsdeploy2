@@ -16,7 +16,7 @@ from sklearn.pipeline import Pipeline
 # Add a background image using custom CSS
 background_image_path = "header.jpg"
 st.image(background_image_path, use_column_width=True)  # Adjust 'use_column_width' based on your preference
-st.markdown("# WQD7006 Machine Learning For Data Science - Group 15")
+st.markdown("# WQD7006 - Group 15")
 st.title('Fraudelent Job Posting Predictor')
 st.write("Members: Law Jia Jin, Lim Sze Sing, Gan Jing Wen, Nur Shafiqah, Nur Nazifa")
 st.write("Our data product is a predictive analytics tool crafted to aid in identifying fake job postings. Using a Random Forest model, the system analyzes job descriptions from job listings to support informed decision-making.")
