@@ -13,6 +13,9 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import Pipeline
 
+# Add a background image using custom CSS
+background_image_path = "header.jpg"
+st.image(background_image_path, use_column_width=True)  # Adjust 'use_column_width' based on your preference
 st.markdown("# WQD7006 MACHINE LEARNING FOR DATA SCIENCE - Group 15")
 
 # Load data from the CSV file
