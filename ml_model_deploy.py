@@ -13,7 +13,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import Pipeline
 
-st.markdown("# WOD7006 MACHINE LEARNING FOR DATA SCIENCE - Group 15")
+st.markdown("# WQD7006 MACHINE LEARNING FOR DATA SCIENCE - Group 15")
 
 # Load data from the CSV file
 data = pd.read_csv("fake_job_postings.csv")
@@ -38,7 +38,7 @@ def predict_fake_job_posting(job_description):
 
 def main():
     st.title('Fraudelent Job Posting Predictor')
-    st.write("MEMBERS: LAW JIA JIN, LIM SZE SING, GAN JING WEN, NUR SHAFIQAH, NUR NAZIFA")
+    st.write("Members: Law Jia Jin, Lim Sze Sing, Gan Jing Wen, Nur Shafiqah, Nur Nazifa")
     st.write("Our data product is a predictive analytics tool designed to assist the identification of fake job postings. Leveraging a Random Forest model, the system analyzes the job description posted from job listings for the informed decisions.")
 
     job_description = st.text_area('Enter job description here:')
