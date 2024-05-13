@@ -14,7 +14,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import Pipeline
 
 st.markdown("# WOD7006 MACHINE LEARNING FOR DATA SCIENCE - Group 15")
-st.write("MEMBERS: NUR SHAFIQAH, LAW JIA JIN, LIM SZE SING, GAN JING WEN, NUR NAZIFA")
+st.write("MEMBERS: LAW JIA JIN, LIM SZE SING, GAN JING WEN, NUR SHAFIQAH, NUR NAZIFA")
 
 st.write("Our data product is a predictive analytics tool designed to assist the identification of fake job postings. Leveraging a Random Forest model, the system analyzes the job description posted from job listings for the informed decisions.")
 
