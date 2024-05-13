@@ -7,15 +7,17 @@ Original file is located at
     https://colab.research.google.com/drive/1oawu_JypP45ysYRo5L0H-WJCifWZsqvi
 """
 
-# WOD7006 MACHINE LEARNING FOR DATA SCIENCE - Group 15
-# FRAUDULENT JOB PREDICTION 
-# MEMBERS: NUR SHAFIQAH, LAW JIA JIN, LIM CHENG YANG, LIM SZE SING, GAN JING WEN, NUR NAZIFA
-
 import streamlit as st
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import Pipeline
+
+st.markdown("# WOD7006 MACHINE LEARNING FOR DATA SCIENCE - Group 15")
+st.title("FRAUDULENT JOB PREDICTION ")
+st.write("MEMBERS: NUR SHAFIQAH, LAW JIA JIN, LIM CHENG YANG, LIM SZE SING, GAN JING WEN, NUR NAZIFA")
+
+st.write("Our data product is a predictive analytics tool designed to assist the identification of fake job postings. Leveraging a Random Forest model, the system analyzes the job description posted from job listings for the informed decisions.")
 
 # Load data from the CSV file
 data = pd.read_csv("fake_job_postings.csv")
